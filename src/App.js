@@ -53,6 +53,7 @@ function App() {
         <Link to="/"><button>Home</button></Link>
         <Link to="/user-gallery"><button>Gallery</button></Link>
         <Link to="/colors"><button>Colors</button></Link>
+        <Link to = "/register"><button>Register</button></Link>
       </div>
     </div>
   );

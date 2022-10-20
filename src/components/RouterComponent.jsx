@@ -3,6 +3,7 @@ import ColorSelector from "./ColorSelector";
 import UserGallery from "./UserGallery";
 import { Route, Routes } from "react-router-dom";
 import PropTypes from "prop-types";
+import Register from "./Register";
 
 const RouterComponent = ({ users }) => {
   return (
@@ -13,7 +14,8 @@ const RouterComponent = ({ users }) => {
         path="/user-gallery"
         element={<UserGallery users={users} />}
       />
-      <Route exact path="/colors" element={<ColorSelector />} />
+          <Route exact path="/colors" element={<ColorSelector />} />
+          <Route exact path="/register" element={<Register />} />
     </Routes>
   );
 };
