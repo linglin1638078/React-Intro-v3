@@ -1,19 +1,18 @@
-import React from 'react';
-import UserList from './UserList';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-const UserGallery = ({users}) => {
-    return (
-        <div>
-            {users.map((user => {
-               <img key={user.id} src={user.avatar} alt = 'avatar'/>
-           }))} 
-        </div>
-    );
+const UserGallery = ({ users }) => {
+  return (
+    <div>
+      {users.map((user) => (
+        <img key={user.id} src={user.avatar} alt = 'avatar'/>
+      ))}
+    </div>
+  );
 };
 
 UserGallery.propTypes = {
-    users: PropTypes.arrayOf(PropTypes.object)
-}
+  users: PropTypes.arrayOf(PropTypes.object),
+};
 
 export default UserGallery;
