@@ -46,10 +46,13 @@ const Register = () => {
     //based on the result, setIsValidUsername
     const handleFormSubmit = (event) => {
         event.preventDefault();//stop browser submitting itself
-        axios.post('reqres.in/api/uers', {
-            name: username,
-            job:userType
-        })
+        if (!isValidUsername) {
+            axios.post('reqres.in/api/uers', {
+                name: username,
+                job:userType
+            })
+        }
+        
     }
 
     return (
