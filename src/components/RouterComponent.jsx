@@ -12,7 +12,7 @@ const RouterComponent = ({ users }) => {
       <Route
         exact
         path="/user-gallery"
-        element={<UserGallery users={users} />}
+        element={<UserGallery />}
       />
           <Route exact path="/colors" element={<ColorSelector />} />
           <Route exact path="/register" element={<Register />} />
